@@ -1,0 +1,27 @@
+// Baukasten SCSS Framework
+// Main entry point
+
+// Base styles
+@use 'base/variables';
+@use 'base/reset';
+@use 'base/typography';
+
+// Layout components
+@use 'layout/grid';
+@use 'layout/flexbox';
+@use 'layout/container';
+
+// UI components
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/forms';
+@use 'components/list';
+@use 'components/table';
+
+// Utility classes
+@use 'utilities/spacing';
+@use 'utilities/colors';
+@use 'utilities/display';
+
+// Themes (optional)
+@use 'themes/default';

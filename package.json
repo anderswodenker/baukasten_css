@@ -1,0 +1,36 @@
+{
+  "name": "baukasten",
+  "version": "1.0.0",
+  "description": "A modular SCSS framework with hot reload capabilities",
+  "main": "dist/baukasten.css",
+  "scripts": {
+    "build": "sass src/baukasten.scss dist/baukasten.css --style=expanded",
+    "build:compressed": "sass src/baukasten.scss dist/baukasten.min.css --style=compressed",
+    "watch": "sass src/baukasten.scss dist/baukasten.css --style=expanded --watch",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\"",
+    "serve": "live-server --host=localhost --port=3000 --open=/demo/ --watch=dist,demo",
+    "lint": "stylelint \"src/**/*.scss\"",
+    "format": "prettier --write \"src/**/*.scss\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "stylelint": "^16.8.1",
+    "stylelint-config-standard-scss": "^13.1.0"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "framework",
+    "modular",
+    "hotreload"
+  ],
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "dist/",
+    "src/"
+  ]
+}

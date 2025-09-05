@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baukasten Framework Demo</title>
+  <link rel="stylesheet" href="../dist/baukasten.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Baukasten</h1>
+    <p>Developing for my needs.</p>
+  </header>
+
+  <section>
+    <h2 class="success">Success</h2>
+    <h2 class="danger">Danger</h2>
+    <h2 class="warning">Warning</h2>
+    <h2 class="info">Info</h2>
+  </section>
+  <section>
+    <h2>Liste</h2>
+    <ul>
+      <li>1. Element</li>
+      <li>2. Element</li>
+      <li>3. Element</li>
+      <li>4. Element</li>
+      <li>5. Element</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Table</h2>
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+  </section>
+
+
+  <script>
+    // Simple theme switcher demo
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeButton = document.createElement('button');
+      themeButton.textContent = 'Toggle Dark Theme';
+      themeButton.className = 'btn btn-outline-primary';
+      themeButton.style.position = 'fixed';
+      themeButton.style.top = '20px';
+      themeButton.style.right = '20px';
+
+      themeButton.addEventListener('click', function() {
+        document.body.classList.toggle('theme-dark');
+      });
+
+      document.body.appendChild(themeButton);
+    });
+  </script>
+</body>
+</html>
