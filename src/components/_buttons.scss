@@ -1,0 +1,17 @@
+button {
+  display: block;
+  transition: background 0.3s ease;
+  font-size: 1.3rem;
+  background: var(--success-color);
+  outline: none;
+  padding: 5px 25px;
+  margin: 0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: var(--spacing-md) 0;
+
+  &:hover {
+    background: var(--hover-color);
+  }
+}

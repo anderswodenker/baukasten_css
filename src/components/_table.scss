@@ -1,8 +1,15 @@
 table {
   border-collapse: collapse;
+  font-size: 1.3rem;
 }
 
 tr {
+  border: 1px solid transparent;
+  transition: border-color .3s ease;
+
+  &:hover {
+    border-bottom-color: var(--dark-color);
+  }
   &:nth-child(2n) {
     background: var(--tertiary-color);
     color: var(--dark-color);
@@ -11,5 +18,5 @@ tr {
 
 th, td {
   text-align: left;
-  padding: var(--spacing-md);
+  padding: var(--spacing-sm);
 }

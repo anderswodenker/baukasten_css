@@ -13,12 +13,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--spacing-xs);
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
+h1 { font-size: 3.5rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
 h4 { font-size: 1.5rem; }
 h5 { font-size: 1.25rem; }
 h6 { font-size: 1rem; }
+
+a {
+  transition: color .3s ease;
+  color: var(--success-color);
+  font-size: 1.3rem;
+
+
+  &:hover {
+    color: var(--hover-color);
+  }
+}
 
 p {
   font-size: 1.3rem;

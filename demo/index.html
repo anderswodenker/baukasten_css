@@ -10,8 +10,24 @@
 <div class="container">
   <header>
     <h1>Baukasten</h1>
-    <p>Developing for my needs.</p>
+    <p>
+      Dieser Baukasten ist dafür gemacht ein passendes UI Kit für kleine Webseiten sowie Apps zu haben
+      die ich intern verwende. Ziel ist es mit semantischen HTML ohne viel Klassen ein gutes UI zu zaubern.
+    </p>
   </header>
+  <section>
+    <h2>Form</h2>
+    <form>
+      <div>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname">
+      </div>
+      <div>
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname">
+      </div>
+    </form>
+  </section>
 
   <section>
     <h2 class="success">Success</h2>
@@ -60,24 +76,11 @@
       </tr>
     </table>
   </section>
-
-
-  <script>
-    // Simple theme switcher demo
-    document.addEventListener('DOMContentLoaded', function() {
-      const themeButton = document.createElement('button');
-      themeButton.textContent = 'Toggle Dark Theme';
-      themeButton.className = 'btn btn-outline-primary';
-      themeButton.style.position = 'fixed';
-      themeButton.style.top = '20px';
-      themeButton.style.right = '20px';
-
-      themeButton.addEventListener('click', function() {
-        document.body.classList.toggle('theme-dark');
-      });
-
-      document.body.appendChild(themeButton);
-    });
-  </script>
+  <section>
+    <h2>Buttons</h2>
+    <button>Klick mich</button>
+    <p>Ein Fließtext mit <a href="/">einem Link</a></p>
+  </section>
+</div>
 </body>
 </html>
